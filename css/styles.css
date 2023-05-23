@@ -1,0 +1,119 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400i, 700, 800i');
+
+ * {
+     font-family: 'Poppins';
+     color: hsl(0, 0%, 8%);
+ }
+
+ body {
+     background-color: hsl(0, 0%, 86%);
+ }
+
+ .card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem 1rem 6rem 1rem;
+    margin: 3rem 1rem 0 1rem;  
+}
+
+ input[type="number"] {
+     width: 70px;
+     font-weight: 700;
+     color: hsl(0, 0%, 8%);
+ }
+
+ label {
+     text-transform: uppercase;
+     letter-spacing: .1rem;
+     font-weight: 700;
+     font-size: 0.7rem;
+     color: hsl(0, 1%, 44%);
+ }
+
+ .italic {
+     font-weight: 800;
+     font-style: italic;
+     font-size: 3rem;
+ }
+
+ .purple {
+     color: hsl(259, 100%, 65%);
+ }
+
+ img {
+     background-color: hsl(259, 100%, 65%);
+     width: 3rem;
+     height: 3rem;
+     padding: 0.75rem;
+     border-radius: 50%;
+     position: relative;
+     z-index: 1;
+ }
+
+ svg {
+     stroke: hsl(0, 0%, 86%);
+     stroke-width: 1;
+     height: 3rem;
+     position: absolute;
+
+ }
+
+ .form {
+     justify-content: space-between;
+ }
+
+
+ .attribution {
+     font-size: 11px;
+     text-align: center;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+
+
+ @media screen and (min-width: 425px) {
+
+     body {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .card {
+         padding: 2rem !important;
+         max-width: 60rem;
+         justify-content: center;
+         
+     }
+     
+     svg {
+         position: relative;
+         max-height: 4rem;
+         padding-left: 0!important;
+         padding-right: 0!important;
+        
+     }
+
+     img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .form {
+        justify-content: flex-start!important;
+        margin-bottom: 0!important;
+    }
+
+    .form-group {
+        justify-content: flex-start;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    input[type="number"] {
+        color: hsl(0, 1%, 44%);
+        width: 4.5rem;
+    }
+
+ }
