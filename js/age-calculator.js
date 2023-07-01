@@ -19,11 +19,12 @@ function validate() {
     let small = document.createElement("small");
     parent.appendChild(small);
     if (!i.value) {
+      //no value
       parent.classList.add("invalid");
       parent.querySelector("small").innerText = errorMessages.required;
       isValid = false;
     } else if(i.value) {
-      // dia, mes y año invalidos
+      //invalid values
       parent.querySelector("small").innerText = "";
       parent.classList.remove("invalid");
       if (i === day && (i.value < 0 || i.value > 31)) {
