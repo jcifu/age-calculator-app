@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Age calculator app</title>
-  
+  <title>Frontend Mentor | Age calculator app</title>  
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- css -->
   <link rel="stylesheet" href="css/styles.css" crossorigin="anonymous">
-
-  <script src="js/age-calculator.js"></script>
+  <script defer src="js/age-calculator.js"></script>
 </head>
-
 <body class="mh-100 p-0 m-0">
-
-  <div class="card px-3 py-4">
-    <div class="form d-flex mb-3 justify-content-around">
-      <div class="form-group row-12 row-xs-3 px-2">
+  <form class="card px-3 py-4">
+    <div class="form d-flex mb-3 justify-content-between">
+      <div class="form-group row-12 row-xs-3">
         <label for="day" class="mb-0">Day</label>
-        <input class="form-control form-control-xs" type="number" id="day">
+        <input class="form-control form-control-xs" type="number" id="day" placeholder="DD">
       </div>
-      <div class="form-group row-12 row-xs-3 px-2">
+      <div class="form-group row-12 row-xs-3">
         <label for="month" class="mb-0">Month</label>
-        <input class="form-control form-control-xs" type="number" id="month">
+        <input class="form-control form-control-xs" type="number" id="month" placeholder="MM">
       </div>
-      <div class="form-group row-12 row-xs-3 px-2">
+      <div class="form-group row-12 row-xs-3">
         <label for="year" class="mb-0">Year</label>
-        <input class="form-control form-control-xs " type="number" id="year">
+        <input class="form-control form-control-xs " type="number" id="year" placeholder="YYYY">
       </div>
     </div>
-
-    <div class="button d-inline-flex mw-100 justify-content-center align-items-center mb-3">
+    <div class= "button d-inline-flex mw-100 justify-content-center align-items-center mb-3">
       <svg class="container" viewBox="0 0 100% 100%">
         <line x1="0" y1="50%" x2="100%" y2="50%" />
       </svg>
-      <img src="assets\images\icon-arrow.svg" onclick="calculate()" alt="Calculate button">
+      <button type="submit">
+      <img src="assets\images\icon-arrow.svg" alt="submit">
+    </button>
     </div>
-
     <div class="container italic justify-content-center">
       <div class="row">
         <div id="years" class="purple mr-2">--</div> years
@@ -54,13 +47,10 @@
         <div id="days" class="purple mr-2">--</div> days
       </div>
     </div>
-  </div>
-  </div>
+  </form>
   <div class="attribution mt-1">
     Challenge by <a href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/jcifu">jcifu</a>.
   </div>
-
 </body>
-
 </html>

@@ -10,13 +10,14 @@
  }
 
  .card {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 1rem 1rem 6rem 1rem;
-    margin: 3rem 1rem 0 1rem;  
-}
+     background-color: hsl(0, 0%, 100%);
+     border-radius: 1rem 1rem 6rem 1rem;
+     margin: 3rem 1rem 0 1rem;
+ }
 
  input[type="number"] {
-     width: 70px;
+     width: 4.5rem;
+     height: 3rem;
      font-weight: 700;
      color: hsl(0, 0%, 8%);
  }
@@ -34,6 +35,7 @@
      font-style: italic;
      font-size: 3rem;
  }
+
 
  .purple {
      color: hsl(259, 100%, 65%);
@@ -61,6 +63,24 @@
      justify-content: space-between;
  }
 
+ .form-group {
+     justify-content: flex-start;
+     margin-bottom: 0;
+ }
+
+ .form-group.invalid label {
+    color: red;
+}
+
+.form-group.invalid input {
+    border-color: red;
+}
+
+.form-group.invalid small {
+    color: red;
+    font-style: italic;
+    font-size: 0.5rem;
+}
 
  .attribution {
      font-size: 11px;
@@ -83,37 +103,37 @@
 
      .card {
          padding: 2rem !important;
-         max-width: 60rem;
+         min-width: 32rem;
          justify-content: center;
-         
+
      }
-     
+
      svg {
          position: relative;
          max-height: 4rem;
-         padding-left: 0!important;
-         padding-right: 0!important;
-        
+         padding-left: 0 !important;
+         padding-right: 0 !important;
+
      }
 
      img {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    .form {
-        justify-content: flex-start!important;
-        margin-bottom: 0!important;
-    }
+         width: 3.5rem;
+         height: 3.5rem;
+     }
 
-    .form-group {
-        justify-content: flex-start;
-        padding-right: 1.5rem;
-        margin-bottom: 0;
-    }
+     .form {
+         justify-content: flex-start !important;
+         margin-bottom: 0 !important;
+     }
 
-    input[type="number"] {
-        color: hsl(0, 1%, 44%);
-        width: 4.5rem;
-    }
+     .form-group {
+         padding-right: 1.5rem;
+     }
+
+     input[type="number"] {
+         width: 6rem;
+     }
+
+
 
  }
